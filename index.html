@@ -620,15 +620,15 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                             <script>
 
                                                 const VideoPath = [
-                                                    'video/video-01.mp4',
-                                                    'video/video-02.mp4',
-                                                    'video/video-03.mp4',
-                                                    'video/video-04.mp4',
-                                                    'video/video-05.mp4',
-                                                    'video/video-06.mp4',
-                                                    'video/video-07.mp4',
-                                                    'video/video-08.mp4',
-                                                    'video/video-09.mp4'];
+                                                    'https://www.youtube.com/embed/8D3G-0wa6VI',
+                                                    'https://www.youtube.com/embed/buddVJbq0vU',
+                                                    'https://www.youtube.com/embed/rKn90hoH_6Y',
+                                                    'https://www.youtube.com/embed/FzovGJbyWXQ',
+                                                    'https://www.youtube.com/embed/933GQlen57M',
+                                                    'https://www.youtube.com/embed/hB_Go8n4AHc',
+                                                    'https://www.youtube.com/embed/hjhm3jms1R0',
+                                                    'https://www.youtube.com/embed/nP7AiUgJpU8',
+                                                    'https://www.youtube.com/embed/m13SS1kppZQ'];
 
                                                 VideoPath.sort(function (a, b) {
                                                     return Math.random() - 0.5;
@@ -637,14 +637,16 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                                 var HtmlCode;
 
                                                 HtmlCode =
-                                                    '<video width="400" controls>' +
-                                                    '<source src="' + VideoPath[0] + '" type="video/mp4">' +
-                                                    '</video>';
+                                                    '<iframe width="500" height="375"' +
+                                                    'src="' + VideoPath[0] + '"' +
+                                                    'title="YouTube video player" frameborder="0"' +
+                                                    'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"' +
+                                                    'allowfullscreen>' +
+                                                    '</iframe>';
 
                                                 document.write(HtmlCode);
 
                                             </script>
-
                                         </div>
 
                                     </div>
