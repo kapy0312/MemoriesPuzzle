@@ -294,7 +294,7 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                         'img/Tpye2/img-13.png',
                                         'img/Tpye2/img-14.png',
                                         'img/Tpye2/img-15.png',
-                                        'img/Tpye2/img-16.png',];
+                                        'img/Tpye2/img-16.png'];
 
                                     Tpye2_ImagesPath.sort(function (a, b) {
                                         return Math.random() - 0.5;
@@ -469,7 +469,7 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                             class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
                                             <h2 class="tm-text-title">關於作者</h2>
                                             <p class="tm-text">
-                                                歡迎光臨！本站的創辦人是一位有多重型態的辣個男人(調皮)，希望在網頁裡播種歡笑的種子，讓您笑中帶淚，樂趣無窮。
+                                                歡迎光臨！本網站的開發者是一位有多重型態的辣個男人(調皮)，希望在網頁裡播種歡笑的種子，讓您笑中帶淚，樂趣無窮。
                                             </p>
                                         </div>
                                         <div
@@ -570,20 +570,22 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                             <p class="tm-text">
                                                 如果你有什麼話想要跟我說的<br>
                                                 歡迎透過一下欄位寫好資料傳送給我啊<br>
-                                                但是先別按下send按鈕(因為我還沒做好這個功能🐸🐸)
+                                                (我做好這個功能了🐸🐸 但別亂發郵件給我喔😎)
                                             </p>
 
                                             <!-- contact form -->
-                                            <form action="index.html" method="post" class="tm-contact-form">
+                                            <form class="tm-contact-form">
 
                                                 <div class="form-group">
-                                                    <input type="text" id="contact_name" name="contact_name"
-                                                        class="form-control" placeholder="Name" required />
+                                                    <input id="InputName" type="text" id="contact_name"
+                                                        name="contact_name" class="form-control" placeholder="Name"
+                                                        required />
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="email" id="contact_email" name="contact_email"
-                                                        class="form-control" placeholder="Email" required />
+                                                    <input id="InputEmail" type="email" id="contact_email"
+                                                        name="contact_email" class="form-control" placeholder="Email"
+                                                        required />
                                                 </div>
 
                                                 <div class="form-group">
@@ -592,16 +594,57 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                                         required></textarea>
                                                 </div>
 
-                                                <button type="submit" class="pull-xs-right tm-submit-btn">Send</button>
+                                                <!-- <button id="EmailButton" type="submit"
+                                                    class="pull-xs-right tm-submit-btn">Send</button> -->
 
                                             </form>
+                                            <button id="EmailButton" type="submit"
+                                                class="pull-xs-right tm-submit-btn">Send</button>
                                         </div>
+
+                                        <!-- <div
+                                            class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                            <h2 class="tm-contact-info">Taichung Intercontinental Baseball Stadium.</h2>
+                                            google map goes here
+                                            <div id="google-map"></div>
+                                        </div> -->
 
                                         <div
                                             class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
-                                            <h2 class="tm-contact-info">Taichung Intercontinental Baseball Stadium.</h2>
-                                            <!-- google map goes here -->
-                                            <div id="google-map"></div>
+                                            <h2 class="tm-contact-info">上班、上課不要看!!!</h2>
+                                            <!-- <video width="300" controls> -->
+                                            <!-- <video width="400" controls>
+                                                <source src="video/video-01.mp4" type="video/mp4">
+                                            </video> -->
+
+                                            <script>
+
+                                                const VideoPath = [
+                                                    'video/video-01.mp4',
+                                                    'video/video-02.mp4',
+                                                    'video/video-03.mp4',
+                                                    'video/video-04.mp4',
+                                                    'video/video-05.mp4',
+                                                    'video/video-06.mp4',
+                                                    'video/video-07.mp4',
+                                                    'video/video-08.mp4',
+                                                    'video/video-09.mp4'];
+
+                                                VideoPath.sort(function (a, b) {
+                                                    return Math.random() - 0.5;
+                                                });
+
+                                                var HtmlCode;
+
+                                                HtmlCode =
+                                                    '<video width="400" controls>' +
+                                                    '<source src="' + VideoPath[0] + '" type="video/mp4">' +
+                                                    '</video>';
+
+                                                document.write(HtmlCode);
+
+                                            </script>
+
                                         </div>
 
                                     </div>
@@ -617,9 +660,7 @@ http://www.templatemo.com/tm-500-fluid-gallery
                 </div> <!-- .cd-full-width -->
             </li>
         </ul> <!-- .cd-hero-slider -->
-
         <footer class="tm-footer">
-
             <div class="tm-social-icons-container text-xs-center">
                 <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
@@ -633,7 +674,6 @@ http://www.templatemo.com/tm-500-fluid-gallery
                 | Design: <a href="www.templatemo.com" target="_parent">Kevin Lai [Template Mo]</a></p>
 
         </footer>
-
     </div> <!-- .cd-hero -->
 
 
@@ -645,6 +685,9 @@ http://www.templatemo.com/tm-500-fluid-gallery
         <div class="loader-section section-right"></div>
 
     </div>
+
+    <!-- Kevin Lai -->
+    <script src="js/Script.js"></script>
 
     <!-- load JS files -->
 
