@@ -1,7 +1,7 @@
 
 $('#EmailButton').on('click', function () {
 
-    var RequestType = 2;
+    var RequestType = 1;
     var Email_Name = $('#InputName').val();
     var Email_Address = $('#InputEmail').val();
     var Email_Contact = $('#contact_message').val();
